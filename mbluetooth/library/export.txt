@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id: export.txt 160 2006-09-03 23:15:40Z marlonj $
+
+# For the midlet export only the library
+midlet=mbluetooth.jar
+
+# For applet or applications export JSR 82 Implementation 
+# also and processing library version
+applet=mbluetooth.jar,mbluetoothp.jar,avetanaBT.jar
+application=mbluetooth.jar,mbluetoothp.jar,avetanaBT.jar

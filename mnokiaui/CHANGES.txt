@@ -1,0 +1,12 @@
+Changes - MNokiaUI Library for Mobile Processing
+------------------------------------------------
+
+Version 0.1.1 (2007,05,29)
+------------------------
+- Updated to work with Mobile Processing Core 0010 ALPHA
+
+Version 0.1 (2006,03,29)
+------------------------
+- Initial Release
+- Based on NokiaUI API
+- Basic Alpha Channel Color Support
