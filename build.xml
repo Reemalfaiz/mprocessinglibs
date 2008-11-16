@@ -37,21 +37,23 @@
 		<ant dir="m3d" inheritAll="false" />
 		<ant dir="mbt" inheritAll="false" />
 		<ant dir="mclientserver" inheritAll="false" />
+		<ant dir="mfiles" inheritAll="false" />
 		<ant dir="mgameii" inheritAll="false" />
 		<ant dir="mgestures" inheritAll="false" />
 		<ant dir="ml2cap" inheritAll="false" />
 		<ant dir="mlocation" inheritAll="false" />
-		<ant dir="mpush" inheritAll="false" />
-			<!-- <ant dir="mmessaging" inheritAll="false" /> -->
-		<!--<ant dir="mnokiaui" inheritAll="false" />-->
+		<ant dir="mnokiaui" inheritAll="false" />
 		<ant dir="mobex" inheritAll="false" />
 		<ant dir="mpim" inheritAll="false" />
+		<ant dir="mpush" inheritAll="false" />
+			<ant dir="mmessaging" inheritAll="false" />
 		<ant dir="mqrcode" inheritAll="false" />
 		<ant dir="mrest" inheritAll="false" />		
 		<ant dir="mrtspserver" inheritAll="false" />
 		<ant dir="msensor" inheritAll="false" />
 		<ant dir="msound" inheritAll="false" />
 			<ant dir="maudio3d" inheritAll="false" />
+			<ant dir="msynth" inheritAll="false" />
 		<ant dir="mvideo" inheritAll="false" />
 			<ant dir="mmediaserver" inheritAll="false" />		
 		<ant dir="mwiimote" inheritAll="false" />
