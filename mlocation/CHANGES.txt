@@ -1,0 +1,19 @@
+MLocation Library for Mobile Processing
+---------------------------------------
+
+Version 0.2.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Examples Update
+- Export File Added
+
+Version 0.2 (2005,11,08)
+------------------------
+- Change Library Name from Location to MLocation
+- Build Script
+
+Version 0.1 (2005,09,15)
+------------------------
+- First release
+- Longitude and latitude request
+

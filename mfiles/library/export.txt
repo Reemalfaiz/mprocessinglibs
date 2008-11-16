@@ -1,0 +1,5 @@
+# Export files to sketchs
+#
+# $Id: export.txt 193 2007-04-17 18:12:20Z marlonj $
+
+midlet=mfiles.jar

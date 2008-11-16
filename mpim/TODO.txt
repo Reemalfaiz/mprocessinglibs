@@ -1,0 +1,7 @@
+ToDo - MPIM Library for Mobile Processing
+-----------------------------------------
+
+- Add Event support 
+- Add ToDo support 
+
+$Id: TODO.txt 296 2007-10-25 15:21:18Z marlonj $ 

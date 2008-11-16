@@ -1,0 +1,40 @@
+MSound Library for Mobile Processing
+------------------------------------
+
+- (2007,11,07)
+
+  Release 0.6.1
+
+  Constructor MSound(DataSource) added to allow the external creation of sounds
+
+- (2007,10,28)
+
+  Constructor MSound(byte[] data, String type) added to play sound from an 
+  array.
+
+- (2007,04,21)
+
+  Release 0.6 
+
+- (2007,04,21)
+
+  MSoundRecorder updated to load the sound from the file, if the user want the
+  data saved when a locator is used, must used MFiles library.
+
+  MSound constructor allow the creation of sounds from the file system when
+  the locator begins with file://
+
+  Location added to MSoundRecorder, this allows save the the sound in a file,
+  some methods added (setLocation, location, save)
+
+  Fixed 0001 : 
+  	MMidi constructor call the prefetch() method of the player after set the 
+	current player in the MSound File. The Msound constructor only realize 
+	the player.
+  
+  Bug 0001 : 
+  	MMidi player fails in K790 phone, the player is not prefetched.
+
+  CHANGELOG.txt file added.
+
+$Id: CHANGELOG.txt 315 2007-11-07 05:52:41Z marlonj $

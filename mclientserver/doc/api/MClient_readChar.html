@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+			<title>readChar()</title>
+			<link href="styles.css" rel="stylesheet" type="text/css">
+			<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="MClient.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">readChar</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+import mjs.processing.mobile.mclientserver.*;
+
+MClient client;
+
+int val = 0;
+
+void setup()
+{
+	client = MBluetooth.selectService(0x1234567890L);
+}
+
+void draw()
+{
+	background(val);
+
+	if(client != null && client.available() > 0)
+		println("" + client.readChar());
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+	
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2">
+				Returns the next byte in the buffer as a char. Returns -1 if nothing is there.
+			</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Syntax</h2></div>
+			<div class="block2">
+				<ul>
+  					<li>client.readChar()</li>
+ 				</ul>
+			</div>
+
+		</div>
+		<div class="block1">
+			<div class="title"><h2>Parameters</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>client</li>
+ 		 			<div class="description2">any variable of type Client</div>
+			</ul>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Returns</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>char</li>
+ 		 			<div class="description2">next byte as a char.</div>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

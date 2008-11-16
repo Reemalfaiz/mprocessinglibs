@@ -1,0 +1,8 @@
+# Export File
+#
+# $Id: export.txt 368 2008-01-26 19:46:42Z marlonj $
+
+# For the midlet export only the library
+midlet=mgestures.jar
+applet=mgestures.jar
+application=mgestures.jar

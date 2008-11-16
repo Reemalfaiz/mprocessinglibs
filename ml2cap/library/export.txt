@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id: export.txt 341 2007-12-30 05:46:31Z marlonj $
+
+# For the midlet export only the library
+midlet=ml2cap.jar
+
+# For applet or applications  
+# export the processing library version
+applet=ml2cap.jar,ml2capp.jar
+application=ml2cap.jar,ml2capp.jar

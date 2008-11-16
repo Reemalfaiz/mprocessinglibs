@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<!--
+
+	Library Build Script for Mobile Processing
+
+	Copyright (c) 2005 - 2008 Mary Jane Soft - Marlon J. Manrique
+	
+	http://mjs.darkgreenmedia.com
+	http://marlonj.darkgreenmedia.com
+
+	This library is free software; you can redistribute it and/or
+	modify it under the terms of the GNU Lesser General Public
+	License as published by the Free Software Foundation; either
+	version 2.1 of the License, or (at your option) any later version.
+
+	This library is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+	Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General
+	Public License along with this library; if not, write to the
+	Free Software Foundation, Inc., 59 Temple Place, Suite 330,
+	Boston, MA  02111-1307  USA
+	
+	$Id: build.xml 377 2008-04-05 04:33:37Z marlonj $
+	
+	Use build.properties file to set options for this library.	
+-->
+
+<!-- Build Script -->
+
+<project name="Library for Mobile Processing" default="build" basedir=".">
+
+	<!-- Load user global properties -->
+	<property file="${user.home}/.ant-global.properties"/>
+
+	<!-- use antenna to create J2ME library -->
+	<taskdef resource="antenna.properties" />
+
+	<!-- load library properties -->
+	<property file="build.properties"/>
+
+	<!-- set Wireless Toolkit home -->
+	<property name="wtk.home" value="${wtk_home}" />
+
+	<!-- set especial J2ME properties  -->
+	<property name="wtk.midp.version" value="2.0" />
+	<property name="wtk.cldc.version" value="1.1" />
+
+	<!-- Build the library -->
+	<target name="build">
+	
+		<delete dir="classes" />
+		<mkdir dir="classes" />
+
+		<!-- create jad file, the package needs the jad file -->
+		<wtkjad 	jadfile="${library_file}.jad" 
+					jarfile="library/${library_file}.jar" 
+					name="${library_name} Library for Mobile Processing" 
+					vendor="${library_vendor}" 
+					version="${library_version}">
+						<midlet name="${library_name} Library" class="Main"/>
+		</wtkjad>		
+
+		<!-- Compile the mobile sources -->
+		<wtkbuild srcdir="src" destdir="classes" preverify="false" 
+			classpath="${library_libraries}" excludes="**/*P.java" />
+			
+		<!-- Compile the processing sources -->
+		<javac srcdir="src" destdir="classes" source="1.2" target="1.2"
+			classpath="${library_libraries}" includes="**/*P.java"
+		/>
+
+		<!-- Create the mobile library file -->
+		<wtkpackage jarfile="library/${library_file}.jar" 
+			jadfile="${library_file}.jad" obfuscate="false" preverify="true"
+			classpath="${library_libraries}" cldc="false" >
+			<fileset dir="classes" excludes="**/*P.class" />
+		</wtkpackage>
+		
+		<!-- Create the library file for Processing-->
+		<wtkpackage jarfile="library/${library_file}p.jar" 
+				jadfile="${library_file}.jad" obfuscate="false" preverify="false"				
+				classpath="${library_libraries}"
+				>
+			<fileset dir="classes" includes="**/*P.class" />
+		</wtkpackage>						
+
+		<!-- Delete temp classes and jad file -->
+		<delete failonerror="false" file="${library_file}.jad" />
+		<delete failonerror="false" dir="classes" />
+		
+	</target>
+
+	<!-- Generate the JavaDoc for the library -->
+	<target name="javadoc">
+
+		<!-- Create the destination directory -->
+		<mkdir dir="docs/javadoc" />
+
+		<!-- Create the JavaDoc files -->
+		<javadoc destdir="docs/javadoc"
+			sourcepath="src" 
+			packagenames="*" 
+			author="true" 
+			version="true" 
+			use="true" 
+			private="true"
+			windowtitle="${library_name} Library ${library_version} for Mobile Processing" >
+			<doctitle>
+				<![CDATA[<h1>${library_name} Library for Mobile Processing</h1>]]>
+			</doctitle>
+			<bottom>
+				<![CDATA[<i>Copyright &#169; ${library_vendor}</i>]]>
+			</bottom>
+		</javadoc>
+
+	</target>
+
+	<!-- Create the distribution file -->
+	<target name="dist" depends="clean">
+
+		<!-- Create a zip with all the directory content at dist directory -->
+
+		<mkdir dir="dist" />
+		
+		<zip destfile="dist/${library_file}_${library_version}.zip" 
+			excludes="dist">
+			<zipfileset dir="../${library_file}" prefix="${library_file}" />
+		</zip>
+		
+	</target>
+
+	<!-- Create the Documentation using ProDoc -->
+	<target name="prodoc">
+		<javadoc 
+			sourcepath="src" 
+			packagenames="*" 
+			>
+			<doclet name="prodoc.StartDoclet"
+					path="..">
+			</doclet>
+		</javadoc>
+
+		<delete failonerror="false" dir="docs/api" />
+		<move file="src/documentation" tofile="docs/api"/>
+		
+	</target>
+	
+	<!-- Copy the library to the server -->
+	<target name="publish">
+	
+		<!-- Ask for username and password -->
+		<input message="Username:" addproperty="publish.username" />
+		<input message="Password:" addproperty="publish.password" />
+	
+		<!-- Copy the file to server using scp -->
+		<scp file="dist/${library_file}_${library_version}.zip" 
+			todir="${publish.username}:${publish.password}@${publish.hostname}:/${publish.path}"/>
+	</target>
+
+	<!-- Remove all created files to clean the build process -->
+	<target name="clean">
+		<delete failonerror="false" dir="docs/javadoc" />
+		<delete failonerror="false" dir="dist" />
+	</target>
+	
+</project>

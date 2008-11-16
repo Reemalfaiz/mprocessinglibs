@@ -1,0 +1,6 @@
+MSockets Library for Mobile Processing - ToDo
+---------------------------------------------
+
+- Add support for UDP datagrams
+
+$Id: TODO.txt 319 2007-11-19 18:38:12Z marlonj $

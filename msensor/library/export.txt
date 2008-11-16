@@ -1,0 +1,6 @@
+# Export File
+#
+# $Id: export.txt 325 2007-12-07 04:48:06Z marlonj $
+
+# For the midlet export only the library
+midlet=msensor.jar

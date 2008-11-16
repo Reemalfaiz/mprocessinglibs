@@ -1,0 +1,55 @@
+MSound Library for Mobile Processing
+------------------------------------
+
+Version 0.6.1 (2007,11,07)
+------------------------
+- Some constructor added to support MSynth library
+
+Version 0.6 (2007,09,01)
+------------------------
+- Bug 00001 : MMidi player fails, the player is not prefetched, Fixed
+- MSoundManager.getMediaType(locator) public
+- MSoundManager.mediaTypeSupported(mediaType) added
+- Support file:// locator
+- MSoundRecorder can save sound to a file
+- MSoundRecorder setLocation(locator) and save() method added
+
+Version 0.5 (2006,02,23)
+------------------------
+- Event RECORD_DATA_AVAILABLE added, used to grab data while is recorded
+- Manager.supportedCaptureTypes() added, return the list of capture types
+- MRecorder can be set to capture diferent audio encoding
+- MBuffer added to internal management of recorded data
+- MRecorder contentType method added
+- MSound events added (VOLUME_CHANGED,BUFFERING_STARTED,BUFFERING_STOPPED
+  DEVICE_AVAILABLE,DEVICE_UNAVAILABLE,DURATION_UPDATED,STOPPED_AT_TIME)
+
+Version 0.4 (2005,12,08)
+------------------------
+- Midi added (noteOn,noteOff,programChange,channelVolume)
+- MSound events notification implemented 
+  (STARTED,STOPPED,CLOSED,ERROR,RECORD_STARTED,RECORD_STOPPED,
+  RECORD_ERROR,END_OF_MEDIA)
+
+Version 0.3.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Examples Update
+- Export File Added
+
+Version 0.3 (2005,11,08)
+------------------------
+- Change Library Name from Sound to MSound
+- Throws RuntimeException at any exception
+
+Version 0.2 (2005,10,24)
+------------------------
+- Build Script
+- Sound Capture and Recording Added
+
+Version 0.1 (2005,09,26)
+------------------------
+- First release
+- Tone generation
+- Sound play
+- Load sounds from data and network

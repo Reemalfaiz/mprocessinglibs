@@ -1,0 +1,21 @@
+MGameII Library for Mobile Processing - Log
+-------------------------------------------
+
+- (2007,04,19)
+
+  First Oficial release.
+
+  Paint problem solve. I forget to set the canvas like the current display :(
+
+  The current implementation don't call the paint method. An email was send to
+  Francis Li to request some support.
+
+  Update to work with Core 0009 ALPHA, exit command and command listener 
+  removed, use the pMIDlet commands.
+
+  Update keywords for subversion.
+
+  Removing files that can be created dist, docs, library, examples.
+
+
+$Id: CHANGELOG.txt 205 2007-04-19 19:47:20Z marlonj $

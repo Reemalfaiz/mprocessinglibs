@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id: export.txt 348 2008-01-08 06:11:31Z marlonj $
+
+# For the midlet export only the library
+midlet=mzxing.jar,ZXingReader.jar
+
+# For applet or applications export the core implemetation 
+# also the processing library version
+applet=mzxing.jar,ZXingReader.jar
+application=mzxing.jar,ZXingReader.jar

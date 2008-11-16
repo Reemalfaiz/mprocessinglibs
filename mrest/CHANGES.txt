@@ -1,0 +1,19 @@
+Changes - MRest Library for Mobile Processing
+---------------------------------------------
+
+Version 0.2 (2007,05,15)
+------------------------
+- Basic HTTP Authorization implemented 
+- Twitter example added
+
+Version 0.1 (2007,06,05)
+------------------------
+- Initial release
+- Rest Library for Mobile Processing
+- GET and POST method supported
+- URL encoded use 
+- Minimal xPath to retrieve results
+- Minimal Flickr and Yahoo examples
+- Contains Microrest library version 0.1 LGPL
+
+$Id: CHANGES.txt 383 2008-05-15 06:31:34Z marlonj $

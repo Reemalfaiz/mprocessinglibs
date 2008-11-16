@@ -1,0 +1,20 @@
+MFiles Library for Mobile Processing - ToDO
+-------------------------------------------
+
+- Implement loadFont
+
+- Check file existence and permissions before read or write.
+
+x Add examples for :
+  x loadImage
+  x loadBytes
+  x loadStrings
+  x saveBytes
+  x saveStrings
+  
+- Check if the filename starts with file:// if not call the PMIDlet 
+  implementation
+
+- Check Jikes error when MFile implements FileSystemListener.
+
+$Id: TODO.txt 198 2007-04-17 19:57:32Z marlonj $

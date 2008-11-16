@@ -1,0 +1,32 @@
+MObex Library for Mobile Processing - Log
+-----------------------------------------
+
+- (2007,08,25)
+
+  Release 0.1
+  
+  Documentation added.
+
+- (2007,08,01)
+
+  Processing implementation added.
+
+- (2007,06,19)
+
+  Get action initial implementation.
+
+- (2007,06,15)
+
+  Obex Push example written.
+  
+  Get action is not implemented yet.
+  
+  Put action implemented, Client and Server, can send a single string or a data
+  buffer to the server, also put a obex object with name, type and data.
+  
+  Library rename from MBtObex to MObex, shorter name and also the irda feature 
+  is not bluetooth attach.
+  
+  Initial import.
+
+$Id: CHANGELOG.txt 360 2008-01-25 00:52:49Z marlonj $

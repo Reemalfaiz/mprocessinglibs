@@ -1,0 +1,7 @@
+# Export File
+#
+# $Id: export.txt 377 2008-04-05 04:33:37Z marlonj $
+
+# For the midlet export only the library
+midlet=mxmlrpc.jar,kxmlrpc.jar,kxml2.jar
+

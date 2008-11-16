@@ -1,0 +1,6 @@
+# Export File
+#
+# $Id$
+
+# Export the library and the ksoap2 library
+midlet=mwebservices.jar,ksoap2.jar

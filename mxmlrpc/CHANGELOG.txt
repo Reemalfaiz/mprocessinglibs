@@ -1,0 +1,11 @@
+MXmlRpc Library for Mobile Processing - Log
+-------------------------------------------
+
+- (2008,04,04) 
+
+  This library is based on kxmlrpc1.1.2 and kxml2-2.3.0 
+
+  Initial import.
+
+
+$Id: CHANGELOG.txt 377 2008-04-05 04:33:37Z marlonj $

@@ -1,0 +1,15 @@
+<panel columns="3" gap="4" top="4" left="4" right="4" bottom="4">
+  <button text=" 7 " name="7" action="display(this, result)" /> 
+  <button text=" 8 " name="8" action="display(this, result)" /> 
+  <button text=" 9 " name="9" action="display(this, result)" /> 
+  <button text=" 4 " name="4" action="display(this, result)" /> 
+  <button text=" 5 " name="5" action="display(this, result)" /> 
+  <button text=" 6 " name="6" action="display(this, result)" /> 
+  <button text=" 1 " name="1" action="display(this, result)" /> 
+  <button text=" 2 " name="2" action="display(this, result)" /> 
+  <button text=" 3 " name="3" action="display(this, result)" /> 
+  <button text=" C " name="C" action="clear(this, result)" /> 
+  <button text=" 0 " name="0" action="display(this, result)" /> 
+  <button text=" . " name="." action="display(this, result)" /> 
+  <textfield name="result" editable="false" colspan="3" />
+</panel>

@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id$
+
+# For the midlet export only the library
+midlet=mobex.jar
+
+# For applet or applications export JSR 82 Implementation 
+# also the processing library version
+applet=mobex.jar
+application=mobex.jar

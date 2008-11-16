@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+			<title>stop()</title>
+			<link href="styles.css" rel="stylesheet" type="text/css">
+			<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="MServer.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">stop</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+import mjs.processing.mobile.mclientserver.*;
+
+MServer server;
+
+int val = 0;
+
+void setup()
+{
+	server = MBluetooth.startService(0x1234567890L);
+}
+
+void draw()
+{
+	val = (val + 1) % 255;
+	background(val);
+
+	if(server != null)
+		server.write(val);
+}
+
+void keyPressed()
+{
+	if(key == '1')
+	{
+		server.stop();
+		server = null;
+	}
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+	
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2">Disconnects all clients and stops the server.</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Syntax</h2></div>
+			<div class="block2">
+				<ul>
+  					<li>server.stop()</li>
+ 				</ul>
+			</div>
+
+		</div>
+		<div class="block1">
+			<div class="title"><h2>Parameters</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>server</li>
+ 		 			<div class="description2">Any variable of type MServer</div>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>

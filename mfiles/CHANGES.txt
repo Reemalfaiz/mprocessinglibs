@@ -1,0 +1,16 @@
+MFiles Library for Mobile Processing
+------------------------------------
+
+Version 0.1 (2007,04,17)
+------------------------
+- First release
+- Based on the JSR 75 API 
+- loadBytes implemented
+- loadStrings implemented
+- loadImage implemented
+- saveBytes implemented
+- saveStrings implemented
+- listRoots implemented
+- isSupported implemented
+
+$Id$

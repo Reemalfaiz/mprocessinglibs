@@ -1,0 +1,12 @@
+MBt Library for Mobile Processing - Changes
+-------------------------------------------
+
+Version 0.1 (2008,01,23)
+------------------------
+- Initial release
+- Discover Service and Devices through Bluetooth 
+- Requiere additional libraries to provide Bluetooth services 
+- Avetana GPL implementation for Linux 
+- Bluecove LGPL implementation for Windows and MacOSX (Not Tested)
+
+$Id: CHANGES.txt 356 2008-01-23 15:44:28Z marlonj $

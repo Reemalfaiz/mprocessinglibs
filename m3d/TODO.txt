@@ -1,0 +1,10 @@
+ToDo - M3d Library for Mobile Processing
+----------------------------------------
+
+- move rect rotation center to the center of the rect not the corner
+- implement line
+- pushMatrix, popMatrix
+- correct lights behaivour
+- implements camera
+- load 3D Objects
+

@@ -1,0 +1,6 @@
+Changes - MTinyLine2d Library for Mobile Processing
+---------------------------------------------------
+
+Version 0.1 (????,??,??)
+------------------------
+- Proof of Concept realese

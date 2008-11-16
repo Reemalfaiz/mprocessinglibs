@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<panel columns="2" gap="4" top="4" left="4" right="4" bottom="4">
+		<label text="Server" />
+		<textfield name="server" text="http://vehera.jsp-servlet.com/b2blog//xmlrpc.php" weightx="1" />
+		<label text="Login" />
+		<textfield name="login" text="" />
+		<label text="Password" />
+		<passwordfield name="password" text="" />
+		<button text="Log in" action="login" colspan="2" />
+		<textarea name="setupResult" editable="false" colspan="2" weighty="1" />
+</panel>

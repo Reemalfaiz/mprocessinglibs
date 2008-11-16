@@ -1,0 +1,11 @@
+ML2Cap Library for Mobile Processing - Log
+------------------------------------------
+
+- (2007,12,30)
+
+  Initial implementation of Server, Client based on client/server libraries 
+  style.    
+  
+  Initial Import 
+
+$Id: CHANGELOG.txt 341 2007-12-30 05:46:31Z marlonj $

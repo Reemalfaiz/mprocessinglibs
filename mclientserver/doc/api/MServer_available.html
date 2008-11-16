@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+			<title>available()</title>
+			<link href="styles.css" rel="stylesheet" type="text/css">
+			<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="MServer.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">available</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+import mjs.processing.mobile.mclientserver.*;
+
+MServer server;
+MClient client;
+
+int val = 0;
+
+void setup()
+{
+	server = MBluetooth.startService(0x1234567890L);
+}
+
+void draw()
+{
+	val = (val + 1) % 255;
+	background(val);
+
+	client = server.available();
+	
+	if(client != null)
+		val = client.read();
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+	
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2"> Returns the next client in line with a new message.</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Syntax</h2></div>
+			<div class="block2">
+				<ul>
+  					<li>server.available()</li>
+ 				</ul>
+			</div>
+
+		</div>
+		<div class="block1">
+			<div class="title"><h2>Parameters</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>server</li>
+ 		 			<div class="description2">Any variable of type MServer.</div>
+			</ul>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Returns</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>MClient</li>
+ 		 			<div class="description2">Client that sends the message.</div>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

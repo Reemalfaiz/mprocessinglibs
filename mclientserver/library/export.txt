@@ -1,0 +1,10 @@
+# Export File
+#
+# $Id: export.txt 162 2006-09-04 12:43:16Z marlonj $
+
+# For the midlet export the library
+midlet=mclientserver.jar
+
+# For processing export the library
+applet=mclientserver.jar
+application=mclientserver.jar

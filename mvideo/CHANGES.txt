@@ -1,0 +1,58 @@
+MVideo Library for Mobile Processing
+------------------------------------
+
+Version 0.6 (2008,01,08)
+------------------------
+- MCapture and MVideo constructor bug fixed  
+- Support media type methods added 
+- MVideoRecording constructor allow custom locator 
+
+Version 0.5 (2007,07,21)
+------------------------
+- Rotation added
+- rotateCamera example added
+- Full screen added
+- Overlay option added, but not works with the current version of mobile
+- Bug 0000039 fixed 
+
+Version 0.4 (2007,07,02)
+------------------------
+- VideoRecorder now use the capture://audio_video url
+- Record to a external file 
+- MVideo type() metod returns the mimetype of the content
+- RTPS/RTP support added
+
+Version 0.3 (2006,02,23)
+------------------------
+- MCapture added to support same instructions like video library
+- MMovie added to support same instructions like video library
+- supportedTypes method added
+- supportedCaptureTypes method added
+- close method added
+- MMovieRecorder added to support Video Recording
+- MVideo events notification implemented 
+  (STARTED,STOPPED,CLOSED,ERROR,RECORD_STARTED,RECORD_STOPPED,
+  RECORD_ERROR,END_OF_MEDIA,VOLUME_CHANGED,BUFFERING_STARTED,BUFFERING_STOPPED
+  DEVICE_AVAILABLE,DEVICE_UNAVAILABLE,DURATION_UPDATED,STOPPED_AT_TIME,
+  SIZE_CHANGED)
+
+Version 0.2.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Examples Update
+- Export File Added
+
+Version 0.2 (2005,11,08)
+------------------------
+- Build Script
+- Change Library Name from Video to MVideo
+- Throws RuntimeException at any exception
+
+Version 0.1 (2005,09,30)
+------------------------
+- Proof of Concept realese
+- Video playback and display
+- Video capture 
+- Grab snapshot from video
+- Volume Control
+- Frame Control (seek frame or time)

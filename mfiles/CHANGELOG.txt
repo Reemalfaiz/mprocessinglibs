@@ -1,0 +1,46 @@
+MFiles Library for Mobile Processing - Log
+------------------------------------------
+
+- (2008,01,24)
+
+  Fixing error in saveString example, thanks to geraldo
+
+- (2007,04,16)
+
+  First Realease 0.1
+
+  ToDO list updated to add some other Mobile Processing instructions to 
+  implement.
+
+  README.txt updated to give a brief description of the library and show how 
+  to run the examples.
+
+  Simple examples added to test each method : 
+  loadImage, loadBytes, loadStrings, saveBytes, isSupported and listRoots.
+
+  saveBytes, saveStrings fixed, must create the file if not exists.
+  
+  loadBytes implementation bug fixed, the file size is returned by fileSize,
+  the totalSize returns the size of the storage system.
+
+  MFile will be used to create objects that represents file objects.
+
+  MFile renamed to MFiles.
+  
+- (2007,04,16)
+
+  Some examples are need, also a guide to create roots, publish files.
+
+  All features needs to be test.
+
+  EVENT_ROOT_ADDED and EVENT_ROOT_REMOVED implemented but jikes fails when the 
+  class implements the FileSystemListener, this feature needs revision.
+
+  isSupported, listRoots added.
+
+  loadImage, loadBytes, loadStrings, saveBytes, saveStrings mobile processing
+  primitives implemented using file access API (JSR 75).
+
+  Initial implementation of the file access library.
+
+$Id$

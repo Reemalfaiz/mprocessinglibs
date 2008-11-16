@@ -1,0 +1,13 @@
+MSockets Library for Mobile Processing - Log
+---------------------------------------
+
+- (2007,11,19)
+
+  First release. 
+
+  Basic socket server and client creation, based on MClientServer library.
+
+  Initial import.
+
+
+$Id: CHANGELOG.txt 319 2007-11-19 18:38:12Z marlonj $
