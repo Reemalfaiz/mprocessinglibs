@@ -1,0 +1,12 @@
+MAudio3D Library for Mobile Processing
+--------------------------------------
+
+Version 0.1 (2006,07,14)
+------------------------
+- First release
+- MSoundSource3D implemented
+- MSpectator implemented
+- Sound source location implemented
+- Sound source directivity implemented
+- Sound source distanceAttenuation implemented
+- Spectator location implemented

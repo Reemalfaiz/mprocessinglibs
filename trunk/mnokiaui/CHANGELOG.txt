@@ -1,0 +1,12 @@
+MNokiaUI Library for Mobile Processing - Log
+--------------------------------------------
+
+- (2007,05,29)
+
+  MCanvas class added to ovewrite methods that use the bufferg.setColor 
+  method, this class also add a method setColor to change the color.
+
+  MNokiaUI class updated to support Mobile Processing Core 0010 ALPHA
+  also overwrite the setColor to use the NokiaUI to allow alpha color.
+
+$Id: CHANGELOG.txt 223 2007-05-30 02:30:29Z marlonj $

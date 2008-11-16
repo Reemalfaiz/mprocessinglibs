@@ -1,0 +1,8 @@
+Changes - MPush Library for Mobile Processing
+---------------------------------------------
+
+Version 0.1 (2006,02,27)
+------------------------
+- Initial Release
+- Initialization based on time (registerAlarm)
+- Initialization based on connection

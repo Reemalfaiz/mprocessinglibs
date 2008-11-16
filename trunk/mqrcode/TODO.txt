@@ -1,0 +1,4 @@
+ToDo - MQRCode Library for Mobile Processing
+--------------------------------------------
+
+$Id: TODO.txt 141 2006-07-23 19:44:35Z marlonj $

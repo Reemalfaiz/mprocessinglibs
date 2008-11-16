@@ -1,0 +1,13 @@
+MGestures Library for Mobile Processing - Log
+---------------------------------------------
+
+- (2008,01,26)
+
+  SimpleGesture example added.
+
+  Up,Down,Left,Right,Up and Left, Up and Rigth,Down and Left, Down and Rigth,
+  gesture recognize.
+
+  Initial Import.
+
+$Id: CHANGELOG.txt 368 2008-01-26 19:46:42Z marlonj $

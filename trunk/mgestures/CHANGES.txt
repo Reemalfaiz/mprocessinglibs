@@ -1,0 +1,11 @@
+MGestures Library for Mobile Processing - Changes
+-------------------------------------------------
+
+Version 0.1 (????,??,??)
+------------------------
+- Up,Down,Left,Right,
+  Up and Left, Up and Rigth,Down and Left, Down and Rigth
+  Gestures recognition 
+- Initial release
+
+$Id: CHANGES.txt 368 2008-01-26 19:46:42Z marlonj $

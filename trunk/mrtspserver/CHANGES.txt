@@ -1,0 +1,8 @@
+MRTSPServer for Mobile Processing - Changes
+-------------------------------------------
+
+Version 0.1 (????,??,??)
+------------------------
+- Initial release
+
+$Id: CHANGES.txt 333 2007-12-22 17:32:20Z marlonj $

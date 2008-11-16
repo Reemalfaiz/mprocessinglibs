@@ -1,0 +1,20 @@
+MClientServer Library for Mobile Processing - Log
+-------------------------------------------------
+
+- (2007,11,19)
+
+  Update build.xml file
+  
+  Removing dist directory and changing version number.
+  
+  Removing build library from the version control.  
+  
+  Adding empty constructor to allow client and server inheritance also 
+  connection attributes change to protected, to allow subclase access.
+  
+  Changes to support MSockets library.
+  
+  Adding CHANGELOG.txt file.
+
+
+$Id: CHANGELOG.txt 318 2007-11-19 18:07:51Z marlonj $

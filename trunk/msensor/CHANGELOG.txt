@@ -1,0 +1,48 @@
+MSensor Library for Mobile Processing - Log
+-------------------------------------------
+
+- (2008,01,08)
+
+  Initial release 0.1, very experimental, never tested in real devices.
+
+  Accelerometer query methods x,y,z rename to accelX, accelY, accelZ, maybe in 
+  other version the accelerometer can return some values based on acceleration 
+  like speed or angles. 
+
+  Some example documentation.
+
+  The support example throws an java.lang.Error in devices without support, this 
+  is cause by the MSensorListener that use a class of the sensor library, a new 
+  way to check support must be implemented.  
+
+  Fixing dates. 
+
+- (2007,12,07)
+
+  Conflicts with the MAccelerometer example, ranamed to MAccel.
+
+  Implemented AVAILABLE and UNAVAILABLE sensor events.
+  
+  To avoid create a new sensor each time a search is perform a sensor cache is 
+  created to storage the sensor created in all the searchs.
+
+  MSensorManager.supported() method throws a Class Not Found exception when is 
+  call from a sketch. To avoid this issue the listen metodos are provide now 
+  by the MSensorListener.
+  
+  Fixing static member pMIDlet on MSensorManager.
+
+- (2007,12,06)
+
+  MAccelerometer sensor implemented.
+  
+  MSensorManager class implemented to query the sensor system, MSensor class 
+  implemented like super class for every sensor, MSensorListener implemented to
+  listen sensor availability.
+  
+  JSR 256 Sensor API implementation extracted from Nokia Reference 
+  Implementation.  
+
+  Initial Import.
+
+$Id: CHANGELOG.txt 350 2008-01-08 07:25:08Z marlonj $

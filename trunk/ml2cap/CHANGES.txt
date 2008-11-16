@@ -1,0 +1,8 @@
+ML2Cap Library for Mobile Processing - Changes
+----------------------------------------------
+
+Version 0.1 (????,??,??)
+------------------------
+- Initial release
+
+$Id: CHANGES.txt 341 2007-12-30 05:46:31Z marlonj $

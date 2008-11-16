@@ -1,0 +1,17 @@
+MSynth Library for Mobile Processing - Changes
+----------------------------------------------
+
+Version 0.1 (2007,11,07)
+------------------------
+- Streaming wave implemented, not all phones support this feature
+- Wavetable supported for wav files at 8000 sample rate
+- MWaveImage component implemented to create an image of a wave 
+- MWav multichannel sound generator implemented with WAV file format 
+- MSin, MCos, MSquare, MTriangle MSaw wave generator
+- MConstant, MAdd, MMul, MSub operators implemented
+- SoundGenerator implemented 
+- Generators implemented
+- Support for streaming sound generators  
+- Initial release
+
+$Id: CHANGES.txt 314 2007-11-07 05:36:12Z marlonj $

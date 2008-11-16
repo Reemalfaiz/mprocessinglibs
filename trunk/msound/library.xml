@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<processing>
+	<library name="MSound">
+		<description>
+			MSound library allows Mobile Processing to load and play sound files from 
+			the data directory or from a server, record captured audio and use midi characteristics.
+		</description>
+		<version>0.4</version>
+		<vendor>
+			<name>Mary Jane Soft - Marlon J. Manrique</name>
+			<url>http://mjs.darkgreenmedia.com</url>
+		</vendor>
+		<target>
+			<name>Mobile</name>
+			<version>0001</version>
+		</target>
+		<update>
+			<url>http://mjs.darkgreenmedia.com</url>
+		</update>
+		<requirements>
+			<library name="MVideo" version="0.5" />
+		</requirements>
+	</library>
+</processing>

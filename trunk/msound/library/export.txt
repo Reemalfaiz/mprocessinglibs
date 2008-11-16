@@ -1,0 +1,1 @@
+midlet=msound.jar

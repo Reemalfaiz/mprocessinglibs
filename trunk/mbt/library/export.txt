@@ -1,0 +1,14 @@
+# Export File
+#
+# $Id: export.txt 355 2008-01-22 20:36:31Z marlonj $
+
+# For the midlet export only the library
+midlet=mbt.jar,microburst_0.1.jar
+
+# For applet or applications export JSR 82 Implementation 
+# also and processing library version
+applet=mbt.jar,mbtp.jar,microburst_0.1.jar,bluecove.jar
+application=mbt.jar,mbtp.jar,microburst_0.1.jar,bluecove.jar
+application.windows=mbt.jar,mbtp.jar,microburst_0.1.jar,bluecove.jar
+application.macosx=mbt.jar,mbtp.jar,microburst_0.1.jar,bluecove.jar
+application.linux=mbt.jar,mbtp.jar,microburst_0.1.jar,avetanaBT.jar

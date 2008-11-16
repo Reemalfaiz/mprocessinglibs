@@ -1,0 +1,10 @@
+# Export File
+#
+# $Id: export.txt 319 2007-11-19 18:38:12Z marlonj $
+
+# For the midlet export the library
+midlet=msockets.jar
+
+# For processing export the library
+applet=msockets.jar
+application=msockets.jar

@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id: export.txt 335 2007-12-27 04:52:33Z marlonj $
+
+# For the midlet export only the library
+midlet=mmediaserver.jar
+
+# For applet or applications export JSR 82 Implementation 
+# also and processing library version
+applet=mmediaserver.jar,mmediaserverp.jar
+application=mmediaserver.jar,mmediaserverp.jar

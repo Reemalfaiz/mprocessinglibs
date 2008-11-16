@@ -1,0 +1,47 @@
+MBt Library for Mobile Processing - Log
+---------------------------------------
+
+- (2008,01,23)
+ 
+  Release 0.1
+
+- (2008,01,22)
+
+  Libraries rename to bluecove.jar and bluecove-gpl to avoid changes on 
+  multiple files when a new version is release.
+
+  The current version of bluecove don't support L2CAP server in Linux.
+
+  Change libraries, adding bluecove and bluecove-gpl 2.0.3 snapshot also change
+  export file to use bluecove library for windows and mac.
+
+- (2008,01,14)
+
+  Adding discover devices and services for Mobile and Processing
+
+  Adding Bluecove library to support bluetooth on Windows and MacOSX
+
+- (2007,08,01)
+
+  Update custom avetanaBT library to support the MWiimote Library, the only 
+  change is the initial values of the MTU. 
+
+  In avetanaBT distribution change file de/avetana/bluetooth/stack/BlueZ.java 
+  line 315  with :
+     int receiveMTU=-1, transmitMTU=-1;   
+
+- (2007,08,01)
+
+  Processing implementation added.
+  Export file added to export files to mobile, applet and application.
+  AvetanaBT.jar version 1.3.17 of 2007-07-19 library added.  
+
+- (2007,06,20)
+
+  Discover service for bluetooth, this is based on the MBluetooth library but 
+  separate the discoverer process of the comunication for to provide a library 
+  that can works with RFCOMM, Obex y L2CAP.
+
+  Initial Import.
+
+$Id: CHANGELOG.txt 357 2008-01-24 21:45:39Z marlonj $

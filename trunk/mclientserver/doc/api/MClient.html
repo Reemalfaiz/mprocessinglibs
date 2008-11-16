@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+		<title>MClient</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="index.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">MClient</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+import mjs.processing.mobile.mclientserver.*;
+
+MClient client;
+
+int val = 0;
+
+void setup()
+{
+	client = MBluetooth.selectService(0x1234567890L);
+}
+
+void draw()
+{
+	if(client != null && client.available())
+		val = client.read();
+
+	background(val);
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+  
+  
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2">
+				A client connects to a server and sends data back and forth. If anything goes wrong with the connection, 
+				for example the host is not there or is listening on a different port, an exception is thrown.
+				The client is created by the service that provides client server communication, for example bluetooth. 
+			</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Methods</h2></div>
+			<div class="block2">
+				<ul>
+		  			<li><a href="MClient_available.html">available()</a></li>
+					<div class="description2">Returns the number of bytes in the buffer waiting to be read</div>
+		  			<li><a href="MClient_read.html">read()</a></li>
+					<div class="description2">Reads the next byte</div>
+		  			<li><a href="MClient_readChar.html">readChar()</a></li>
+					<div class="description2">Returns the next byte as a char</div>
+		  			<li><a href="MClient_readBytes.html">readBytes()</a></li>
+					<div class="description2">Reads some number of bytes from the input</div>
+		  			<li><a href="MClient_readString.html">readString()</a></li>
+					<div class="description2">Reads a string</div>
+		  			<li><a href="MClient_write.html">write()</a></li>
+					<div class="description2">Writes bytes, chars, ints, bytes[], Strings</div>
+					<li><a href="MClient_stop.html">stop()</a></li>
+					<div class="description2">Disconnects from the server</div>					
+				</ul>
+			</div>
+		</div>
+	</div>		
+	</body>
+</html>

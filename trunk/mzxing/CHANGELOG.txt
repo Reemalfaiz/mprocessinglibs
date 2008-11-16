@@ -1,0 +1,23 @@
+MZXing Library for Mobile Processing - Log
+---------------------------------------
+
+- (2008,01,08)
+
+  Simply decode image and capture decode provide.
+
+  The library works more quickly than the MQRCode library but this library is 
+  bigger. 
+
+  The MZXing library use the ZXingReader application for the J2ME platform,  
+  no modifications to the code are made, only to the build process to create a
+  not obfuscate version of the application.
+  
+  The ZXing library use is the 0.2 (2008,01,07) 
+
+  This library decode QRCodes, is a wrapper for the ZXing library available at 
+  http://code.google.com/p/zxing, the library is licensed under the  Apache 
+  License, Version 2.0
+
+  Initial import.
+
+$Id: CHANGELOG.txt 348 2008-01-08 06:11:31Z marlonj $

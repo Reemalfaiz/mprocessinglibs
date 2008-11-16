@@ -1,0 +1,60 @@
+MRest Library for Mobile Processing - Log
+-----------------------------------------
+
+- (2008,05,15)
+
+  TwitterUpdate example added.
+
+  Library MicroRest updated to version 0.2 
+
+- (2008,05,14)
+
+  New constructor to provide the method added 
+    MRestRequest(PMIDlet,url,method)
+    
+  Method setAuthorization(username,password) implemented to provide basic 
+  authorization 
+
+- (2007,06,05)
+
+  Release 0.1
+  
+  Ready for the first release of the library.
+  
+  Minimal examples added Flickr and Yahoo.
+  
+  Clases rename to MRestXXX.
+  
+  Classes rewritten to provide access to the mjs.microrest library.
+  
+  Library moved to J2ME and rename like MicroRest, now the Mobile Processing
+  Implementation is based on the version 0.1
+
+- (2007,06,01)
+
+  EVENT_DONE added, this event is fired when the entire response has been read 
+  and is available. The data object will be a MResponse. Now you can wait for 
+  the response like an event.
+
+  The methods getResults added to MResponse and MResult to grab all the results
+  with a given name under the xml.
+
+  Initial implementation of the MRest library.
+  
+  This library allows access to REST services using two objects MRequest to 
+  encapsulate the request and MReponse to encapsulate the response.
+  
+  The MRequest provide the methods to create a REST request using the GET or 
+  POST method, creating the query urls or adding the parameters to the POST 
+  request.
+  
+  The XML response is parse using the KXML parser, and grabbing the response in
+  a tree struct representing each tag with the name, text and attributes, also 
+  provide a xpath implementation to grab the text() and @attribute values for a 
+  element provide like a path "/rsp/@stat", also provide access to the elements
+  of the response.
+  
+  The current implementation support GET method only and hav to wait the request 
+  until is parse.
+
+$Id: CHANGELOG.txt 382 2008-05-15 05:49:42Z marlonj $

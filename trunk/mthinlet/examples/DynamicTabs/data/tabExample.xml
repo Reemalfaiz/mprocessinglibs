@@ -1,0 +1,11 @@
+<panel columns="1" gap="4">
+  <menubar weightx="1">
+    <menu text="File">
+      <menuitem text="Open" action="menuOpen"/>
+      <menuitem text="Save" action="menuSave"/>
+	  <menuitem text="Exit" action="menuExit"/>
+    </menu>
+  </menubar>
+  <tabbedpane name="tabparent" placement="top" weighty="1">
+  </tabbedpane>
+</panel>

@@ -1,0 +1,10 @@
+MSockets Library for Mobile Processing - Changes
+------------------------------------------------
+
+Version 0.1 (2007,11,19)
+------------------------
+- Initial release
+- Socket implementation based on MClientServer library
+- Require MClientServer 0.4 
+
+$Id: CHANGES.txt 319 2007-11-19 18:38:12Z marlonj $

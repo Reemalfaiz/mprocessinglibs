@@ -1,0 +1,13 @@
+MSensor Library for Mobile Processing - Changes
+-----------------------------------------------
+
+Version 0.1 (2008,01,08)
+------------------------
+- Sensor finder implemented, with quantity, context 
+	or all availables
+- Sensor availability event implemented
+- Accelerometer reader implemented, other sensor not availables 
+- Proof of Concept library, not tested yet  
+- Initial release
+
+$Id: CHANGES.txt 350 2008-01-08 07:25:08Z marlonj $

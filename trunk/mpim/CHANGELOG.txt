@@ -1,0 +1,18 @@
+MPIM Library for Mobile Processing - Log
+---------------------------------------
+
+- (2007,10,25)
+
+  This library was tested in a K790 Sony Ericsson Phone.   
+  
+  Basic classes are added to allow list the contacts and create new contacts.  
+  
+  First version of the Personal Information Management Library for Mobile 
+  Processing. This initial version allow access to the contact list on the 
+  phone if the JSR75 API is supported to list the current contacts and to save
+  new contacts.
+
+  Initial Import 
+
+
+$Id: CHANGELOG.txt 296 2007-10-25 15:21:18Z marlonj $

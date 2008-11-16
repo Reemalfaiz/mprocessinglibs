@@ -1,0 +1,33 @@
+MMessaging for Mobile Processing
+--------------------------------
+
+Version 0.3.1 (2006,02,27)
+--------------------------
+- MPush support added
+- register activation 
+- unregister activation 
+
+Version 0.3 (2006,02,13)
+------------------------
+- Library Redesigned
+- Send and Receive Text and Binary SMS
+- Receive Text and Binary messages via CBS 
+- Events Added (EVENT_SMS_MESSAGE_ARRAIVE, EVENT_CBS_MESSAGE_ARRAIVE)
+- WMA 1.0 Compatible
+
+Version 0.2.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Examples Update
+- Export File Added
+
+Version 0.2 (2005,11,08)
+------------------------
+- Build Script
+- Change Library Name from WMessaging to MMessaging
+
+Version 0.1 (2005,09,22)
+------------------------
+- First release
+- Send sms message
+- Receive sms message

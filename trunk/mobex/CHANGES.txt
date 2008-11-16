@@ -1,0 +1,9 @@
+MObex Library for Mobile Processing - Changes
+---------------------------------------------
+
+Version 0.1 (2008,01,25)
+------------------------
+- Initial release
+- Implements Obex Server and Client 
+
+$Id: CHANGES.txt 361 2008-01-25 00:59:04Z marlonj $

@@ -1,0 +1,4 @@
+MZXing Library for Mobile Processing - ToDO
+-------------------------------------------
+
+$Id: TODO.txt 348 2008-01-08 06:11:31Z marlonj $

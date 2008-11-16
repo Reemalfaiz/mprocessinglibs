@@ -1,0 +1,5 @@
+Bugs - M3d Library for Mobile Processing
+----------------------------------------
+
+- 00001 Lights Rotate when the rotateX, rotateY or rotateY is applied
+        The lighst must remain static

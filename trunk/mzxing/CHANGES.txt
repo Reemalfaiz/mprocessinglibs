@@ -1,0 +1,11 @@
+MZXing Library for Mobile Processing - Changes
+-------------------------------------------
+
+Version 0.1 (2008,01,08)
+------------------------
+- Provides decode features 
+- Library based on ZXing Library version 0.2 
+  http://code.google.com/p/zxing 
+- Initial release
+
+$Id: CHANGES.txt 348 2008-01-08 06:11:31Z marlonj $

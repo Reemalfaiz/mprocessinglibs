@@ -1,0 +1,68 @@
+Changes - M3d Library for Mobile Processing
+-------------------------------------------
+
+Version 0.5 (2007,05,13)
+------------------------
+- Updated to work with Mobile Processing Core 0010 ALPHA
+- Duplicated code removed, now using the PCanvas values
+- remove 3d objetc from a scene
+- rect rotation point center
+- textFont must be used before use text method
+- loadObjects from a m3g file
+- world returns a objet that represents the scene 
+- duplicate objects from a scene
+- MWorld added to allow find some 3d objects
+- Alpha color supported in the meshes
+- Some examples updated
+
+Version 0.4 (2007,01,20)
+------------------------
+- Updated to work with Mobile Processing Core 0009 ALPHA
+- sphere implemented
+- pick implemented
+- M3dObject added
+- Both sides of polygons are visible
+- MLight added
+- MCamera added
+- Redikod examples ported
+
+Version 0.3 (2006,01,11)
+------------------------
+- Bug 00001 Fixed (Lights Rotation)
+- box(width,height,depth) implemented
+- PI float constant added to M3d
+- ellipseMode implemented
+- ellipse implemented
+- point implemented
+- quad implemented
+- triangle implemented
+
+Version 0.2 (2005,12,05)
+------------------------
+- Library Redesigned (class M3dCanvas removed and transfer all features to class M3d)
+- Allows load external 3D models throught loadWorld method
+- ambientLight, spotLight, directionalLight primitives implemented (initial versions)
+- omniLight added (initial version)
+- normal primitive implemented
+- strip lengths added to MMesh to control the lenght of each triangle strip
+- image primitive implemented (the image always face the camera)
+- save added (return an image with the content of the screen)
+- texture implemented
+- textAlign, textFont, textWidth implemented (initial version)
+- perspective implemented
+- camera implemented (initial version)
+
+Version 0.1 (2005,11,28)
+------------------------
+- Proof of Concept realese
+- Based on M3G API
+- Support TRIANGLE_STRIP shape mode only
+- beginShape, vertex, endShape primitives implemented
+- fillColor by vertex implemented
+- rotateX, rotateY, rotateZ implemented
+- translate implemented
+- background implemented
+- box(size) primitive implemented
+- rect primitive implemented
+
+$Id$

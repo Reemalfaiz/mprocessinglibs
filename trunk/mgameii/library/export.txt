@@ -1,0 +1,5 @@
+# Export files to sketchs
+#
+# $Id: export.txt 202 2007-04-19 18:05:02Z marlonj $
+
+midlet=mgameii.jar

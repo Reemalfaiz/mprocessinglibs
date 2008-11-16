@@ -1,0 +1,17 @@
+Build the Library for Mobile Processing
+---------------------------------------
+
+You can build this library, to do that you will need :
+
+- Ant, Java Based Build Tool (http://ant.apache.org/)
+- Sun Java Wireless Toolkit (http://java.sun.com/products/sjwtoolkit)
+- Antenna, An Ant-to-End Solution For Wireless Java (http://antenna.sourceforge.net)
+- Mobile Processing (http://mobile.processing.org)
+
+Instructions : 
+--------------
+
+- Copy this library at Mobile Processing libraries directory 
+- Run build script using ant
+
+$Id: BUILD.txt 257 2007-06-21 01:26:41Z marlonj $

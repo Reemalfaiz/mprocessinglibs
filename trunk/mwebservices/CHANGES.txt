@@ -1,0 +1,24 @@
+MWebServices for Mobile Processing
+----------------------------------
+
+Version 0.3 (????,??,??)
+------------------------
+- KSoap 2.1.1 Update
+
+Version 0.2.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Export File Added
+
+Version 0.2 (2005,11,08)
+------------------------
+- Build Script
+- Change Library Name from Webservices to MWebServices
+
+Version 0.1 (2005,10,06)
+------------------------
+- Alpha release
+- Call soap services version 1.0
+- Use KSoap2 library 
+
+$Id$

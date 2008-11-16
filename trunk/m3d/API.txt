@@ -1,0 +1,57 @@
+Processing API
+--------------
+
+Not Implemented :
+
+- noSmooth()
+- saveFrame
+- screen
+- smooth()
+- arc()
+- line()
+- bezier()
+- curve()
+- strokeCap()
+- strokeJoin()
+- strokeWeight()
+- bezierVertex()
+- curveVertex()
+- sphere()
+- sphereDetail()
+
+
+Implemented :
+
+- true
+- false
+- draw()
+- noLoop()
+- loop()
+- redraw()
+- setup()
+- size()
+- delay()
+- frameCount
+- framerate
+- framerate()
+- height
+- save() -> return an image with the current screen content
+- color
+- color()
+- ellipse()
+- point()
+- quad()
+- rect()
+- rectMode()
+- triangle()
+- beginShape()
+- endShape()
+- vertex()
+- box()
+
+
+Not Apply :
+
+- cursor()
+- noCursor()
+

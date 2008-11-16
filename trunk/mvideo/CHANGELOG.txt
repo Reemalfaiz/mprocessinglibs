@@ -1,0 +1,74 @@
+MVideo Library for Mobile Processing - Log
+------------------------------------------
+
+- (2008,01,08)
+
+  The video recording locator capture://audio_video works fine in Sony Ericsson
+  phones, but with Nokia phones the locator is the same that video capture, to 
+  avoid this problems a new constructor is added to the MVideoRecording class 
+  allowing the user specified the custom locator. 
+  
+  public MVideoRecorder(PMIDlet pMIDlet, String locator, String parameters) 
+
+- (2007,12,14)   
+
+  Example CaptureTypes added.
+
+  Adding support methods : 
+	  MVideoManager.supportedCaptureTypes()
+	  MVideoManager.supportedTypes()
+	  MVideoManager.mediaTypeSupported(String)
+	  
+  Deprecate methods :
+	  MVideo.supportedCaptureTypes()
+	  MVideo.supportedTypes()         
+
+  Fixing Bugs 
+      MCapture(PMIDlet pMIDlet, boolean overlay)
+        Not super constructor available 
+      MVideo(PMIDlet pMIDlet, Player videoPlayer)
+        Player not set 
+
+- (2007,07,21)
+
+  Release 0.5
+  
+  rotateCamera example added.
+  
+  Adding transform to rotate the video 90, 180, 270 or mirror it. 
+  Adding fullscreen and noFullscreen methods.
+  
+  Fixing bug 0000039 in MVideoRecorder, constructor calls a super constructor 
+  and don't create the recordControl. Fixed 
+
+- (2007,07,17)
+
+  Adding overlay option to allow drawing over the video, this feature don't 
+  work yet because mobile processing draws an image of the size of the 
+  display that covers the video.
+
+- (2007,07,02)
+
+  Release 0.4
+
+- (2007,06,30)
+
+  Adding valid urls to support video streaming through rtp and rtsp
+
+- (2007,06,14)
+
+  MVideo type() method added to return the content type of the video.
+  
+  Build scripts updated.
+
+- (2007,04,21)
+
+  MVideo constructor allow the creation of sounds from the file system when
+  the locator begins with file://
+
+  Location added to MVideoRecorder, this allows save the the sound in a file,
+  some methods added (setLocation, location, save)
+
+  CHANGELOG.txt file added.
+
+$Id: CHANGELOG.txt 351 2008-01-08 18:44:36Z marlonj $

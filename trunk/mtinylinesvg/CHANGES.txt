@@ -1,0 +1,7 @@
+Changes - MTinyLineSVG Library for Mobile Processing
+----------------------------------------------------
+
+Version 0.1 (????,??,??)
+------------------------
+- Proof of Concept realese
+- Use TinyLineSVG 1.10 Library

@@ -1,0 +1,8 @@
+MXmlRpc Library for Mobile Processing - Changes
+-----------------------------------------------
+
+Version x.x (????,??,??)
+------------------------
+- Initial release
+
+$Id: CHANGES.txt 377 2008-04-05 04:33:37Z marlonj $

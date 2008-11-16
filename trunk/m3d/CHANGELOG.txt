@@ -1,0 +1,64 @@
+M3d Library for Mobile Processing - Log
+---------------------------------------
+
+- (2007,07,24)
+
+  Methods x(), y(), z() added to the M3dObject to query the current location,
+  also the scale(sx,sy,sz) method.
+  
+  M3d.lastMesh method deprecated, replace by M3d.lastObject that returns the 
+  last object added to the scene like a M3dObject 
+
+- (2007,07,23)
+
+  Class MSprite3D added.
+
+- (2007,06,15)
+
+  Bugs fixed :
+  
+  0000034 : Image location always 0,0
+  0000035 : text function don't work
+  0000036 : Draw empty text cause exception
+  
+- (2007,05,13)
+  
+  The jsr184.jar file must be present because the jikes compiler check the 
+  existence of the m3g package.
+  
+  Method lastMesh added to recover the last image, box, sphere, rect, ellipse
+  and any 3d object added to the scene.
+
+  All method to draw image was renamed to sprite, this show the image always 
+  facing the user, this can be use to show labels.
+  
+  Image implementation changed to create a rect mesh with the image like 
+  texture. This allows rotate the image and manipulate the image like a MMesh,
+  one problems is that the image must hae a size power of 2.
+
+- (2007,05,12)
+  
+  Library updated to support Mobile Processing Core 0010 ALPHA :
+  
+    - All the duplicated code copy from PCanvas is removed.
+      The new core version allow access this values because now they have 
+      protected access      
+    - Examples updated 
+    - bgImage bug found, need to be fixed
+    - Build script updated 
+
+- (2007,04,18)
+
+  Transparent images support added :
+  
+  	- MMesh alpha color support added.
+  	- Image2D create the image using the format RGBA
+
+- (2007,04,16)
+
+  rect primitive updated to center the rectangle. 
+  Now the rectangle rotate in Z around the center and not a corner like before.
+
+  CHANGELOG.txt file added.
+
+$Id: CHANGELOG.txt 274 2007-07-26 04:20:44Z marlonj $

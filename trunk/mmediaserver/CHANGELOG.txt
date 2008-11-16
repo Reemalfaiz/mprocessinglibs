@@ -1,0 +1,45 @@
+MMediaServer Library for Mobile Processing - Log
+------------------------------------------------
+
+- (2007,12,26)
+
+  File progress event added, use to show how many bytes are loaded. 
+
+  Fixing video closing.
+
+  Examples update and documentation added.
+
+  Better open and close implementation, support for multiple service discover 
+  implemented.
+
+- (2007,12,26)
+
+  GET_FILE and GET_FILES request implemented.  
+
+  Send file server request implemented.
+  
+  Fixing channels request.
+
+- (2007,12,14)
+
+  Processing Version added and example VideoServerP added.
+  
+  Better client and server implementation, content types added. 
+
+  The client maintains a connection with the server to load the different 
+  files, and retrieve channel info.
+  
+  Adding channel and files configuration, default video. 
+
+  Initial implementation of client, allowing discover the server and request 
+  the single file on the server. 
+
+  Initial implementation of server, allowing send a single file over bluetooth 
+  to a client.  
+
+  This library creates a media server use to deliver audio and video over 
+  a bluetooth connection.  
+
+  Initial Import 
+
+$Id: CHANGELOG.txt 339 2007-12-27 15:27:48Z marlonj $

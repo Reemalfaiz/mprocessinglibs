@@ -1,0 +1,70 @@
+MSynth Library for Mobile Processing - Log
+------------------------------------------
+
+- (2007,11,06)
+
+  Method toString added to all the classes.
+  
+  Streaming example added, this example only works if the phone support 
+  streaming audio/x-wav content, if not the midlet try to load all the audio 
+  data before play the sound. 
+
+- (2007,11,06)
+
+  MSynth class added to provide global methods like support methos and some 
+  constants used by the library. Support example added.
+
+- (2007,11,04)
+
+  Adding stereo example.
+  
+  Fixing sound duration according the number of channels.
+  
+  Modulation examples added.
+  
+  Fixing MSaw generator, period added.
+  
+  MWaveTable added and table based on wav file added (MWavTable)
+  
+  MWaveViewer rename to MWaveImage to create an image of the wave generate by
+  the parent generator of the component. Example added.
+  
+  Initial version of the MWaveViewer, component to show a wave generate with 
+  the synthesizers.
+
+  Fixing MAdd generator, the vector needs to be created always.
+  
+  Fixing time update on wave generators, the increment must be set after 
+  calculate the current time value.
+
+  Adding more wave operators like subtract and multiplication, a new abstract 
+  class is created to support binary operations, cosine example added.
+
+  Triangle and Sawtooth wave generators added, also examples.
+  
+  MSquare wave generator added, also a sample of use and a sample to save the 
+  wav file generate to a file inside the phone.
+
+  The MWave abstract class is created to provide a base class to the different 
+  kinds of waves generate by the synth. The MSin generator now is a MWave 
+  subclass.
+
+- (2007,11,03)
+
+  Adding A440 and AddHarmonics examples.
+
+- (2007,11,02)
+
+  Value setter and getter added to MConstant.
+  
+  Basic arquitecture implemented based on Generators and SoundGenerators. The
+  current generators are MConstant, MSin like signal generators, MAdd allows 
+  signal addition and MWav allows the creation of wav sounds.
+  
+  The MSynth library allows the creation of synthetized sounds based on signal
+  generators like MSin and sound generators like MWav that creates wav files 
+  with the generate sounds.
+  
+  Initial import.
+
+$Id: CHANGELOG.txt 313 2007-11-07 05:23:13Z marlonj $

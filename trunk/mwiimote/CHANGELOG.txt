@@ -1,0 +1,112 @@
+MWiimote Library for Mobile Processing - Log
+--------------------------------------------
+
+- (2008,02,01) 
+
+  A better way to deliver mousePress and mouseRelease needs to be implemented.
+
+  MWhiteBoardP desktop support added, this allows send mouse events to the 
+  desktop host. When the board reads ir data, send a mouse pressed and mouse 
+  release event to the desktop.
+
+- (2008,01,31)
+
+  To avoid create all the libraries objects, listen the discover events and 
+  create a simple way to discover, calibrate and report data, the class 
+  MWhiteBoardP support multiple constructors to allow passing libraries objects
+  or create the libraries objects when the board is started. 
+  
+  A calibration process is implemented to provide a easy way to perform this 
+  tasks, needs better messages and some menu.  
+
+  Adding specific implementation of the whiteboard to Processing.
+
+  Adding MWiiControlListener to check ir events from the control. 
+
+  Whiteboard implementation using wiimote, this implementation use a 
+  Projector-Camera Homography to calibrate the projection according wiimote 
+  data. 
+
+  More info :
+  Smarter Presentations: Exploiting Homography in Camera-Projector Systems
+  Rahul Sukthankar, Robert G. Stockton, Matthew D. Mullin
+  http://www.cs.cmu.edu/~rahuls/pub/iccv2001-rahuls.pdf
+
+- (2008,01,26)
+
+  The IR data is initialized to generate correct information the first time 
+  that is read.
+
+  Debug attribute added to the MWiimote class to allow print debugging info 
+  when necessary.
+
+  Rumble implemented.
+
+  Battery Level implemented.
+
+  Better IR activation, enable and disable works, screen resolution added,
+  accelerometer enable and disable works now. 
+
+- (2008,01,25)
+
+  Rename check methods to parse.
+
+  Adding support for IR data: Enable IR and parse data implemented.  
+
+  Update build.xml file to allow publish the library easy. 
+
+- (2008,01,25)
+
+  Release 0.1
+
+- (2008,01,06)
+
+  Issue : 
+  
+  	When the client close the connection with the proxy some times this don't 
+  	fire the event client disconnected.   
+
+  To avoid the problem of receive a lot of packets in the phone, the proxy can 
+  be configured to discard an amount of packets. After some tests with a K790 
+  phone the default discard value is set to 5 wich means that 1 packet of 5 is 
+  send to the server. 
+
+  Testing the proxy client, the wiimote control send a lot of packets with the 
+  accelerometer information, this amount of data can be read by a computer but 
+  a phone takes more time to read each data. 
+
+- (2008,01,05)
+
+  Adding proxy example to allow connect the control to a mobile phone and 
+  mobile client to connect the phone to the control. 
+  
+  Proxy implementation added to allow a phone to read and write data from a 
+  Wiimote control.
+
+- (2008,01,04)
+
+  Example MoveBallP added to show how to read accelerometer values.
+  
+  Adding accelerometer support, turn on/off, calibrate, read data. 
+  
+  Adding support for button press event, the application return a mask with 
+  the bits of each button pressed, all the eleven buttons are listen.  
+
+  The l2cap problem is not present using the AvetanaBT implementation cause 
+  allow open the connection with the wiimote then a Processing version can be 
+  create to access the control, also can be use to create a proxy to connect 
+  the phone with the Processing proxy, with the control to avoid the problem 
+  with phones. 
+  
+  The wiimote discovery works fine in phones, but when the connections is open 
+  a exception "Bad PSM" is throw cause the phone don't support open l2cap 
+  connection in ports 0x11 and 0x13 cause are reserved and only availables to 
+  the Operative System. 
+
+  Leds change state implemented. 
+
+  This library connect the Wii Remote control with Mobile Processing.
+
+  Initial Import.
+
+$Id: CHANGELOG.txt 374 2008-02-01 21:57:39Z marlonj $

@@ -1,0 +1,24 @@
+MRTSPServer for Mobile Processing - Log
+---------------------------------------
+
+- (2007,12,22)
+
+  Initial Test :  
+  	Server Running on WTK 2.5.2 Emulator	OK
+  	mplayer linux client 					OK 
+  	vlc linux client 						OK
+
+  The initial content deliver is WAV files in PCM/8Khz/1ch   
+
+  Initial proof of concept, this server implements the requests : 
+  	OPTIONS, DESCRIBE, SETUP, PLAY, TEARDOWN 
+  	
+  The PAUSE request is not implemented yet.  
+
+  RTSP Server for Mobile Processing, use to deliver content using the rtsp 
+  protocol allowing streaming media content from a phone with Wifi. 
+
+  Initial Import.
+
+
+$Id: CHANGELOG.txt 333 2007-12-22 17:32:20Z marlonj $
