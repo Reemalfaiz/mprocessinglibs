@@ -65,6 +65,8 @@
 					version="${library_version}">
 						<midlet name="${library_name} Library" class="Main"/>
 		</wtkjad>		
+		
+		<echo message="${library_libraries}"/>
 
 		<!-- Compile the mobile sources -->
 		<wtkbuild srcdir="src" destdir="classes" preverify="false" 

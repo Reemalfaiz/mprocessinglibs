@@ -4,7 +4,7 @@
 
 	Library Build Script for Mobile Processing
 
-	Copyright (c) 2005-2007 Mary Jane Soft - Marlon J. Manrique
+	Copyright (c) 2005 - 2008 Mary Jane Soft - Marlon J. Manrique
 	
 	http://mjs.darkgreenmedia.com
 	http://marlonj.darkgreenmedia.com
@@ -24,10 +24,9 @@
 	Free Software Foundation, Inc., 59 Temple Place, Suite 330,
 	Boston, MA  02111-1307  USA
 	
-	Use build.properties file to set options for this library.
+	$Id: build.xml 377 2008-04-05 04:33:37Z marlonj $
 	
-	$Id: build.xml 223 2007-05-30 02:30:29Z marlonj $
-
+	Use build.properties file to set options for this library.	
 -->
 
 <!-- Build Script -->
@@ -65,14 +64,29 @@
 						<midlet name="${library_name} Library" class="Main"/>
 		</wtkjad>		
 
-		<!-- Compile the sources -->
-		<wtkbuild srcdir="src" destdir="classes" preverify="false" classpath="../../lib/mobile.jar;library/nokiaext.jar" />
+		<!-- Compile the mobile sources -->
+		<wtkbuild srcdir="src" destdir="classes" preverify="false" 
+			classpath="${library_libraries}" excludes="**/*P.java" />
+			
+		<!-- Compile the processing sources -->
+		<javac srcdir="src" destdir="classes" source="1.2" target="1.2"
+			classpath="${library_libraries}" includes="**/*P.java"
+		/>
 
-		<!-- Create the library file -->
-		<wtkpackage jarfile="library/${library_file}.jar" jadfile="${library_file}.jad" obfuscate="false" preverify="true"
-			classpath="../../lib/mobile.jar;library/nokiaext.jar" cldc="false" >
-			<fileset dir="classes" />
+		<!-- Create the mobile library file -->
+		<wtkpackage jarfile="library/${library_file}.jar" 
+			jadfile="${library_file}.jad" obfuscate="false" preverify="true"
+			classpath="${library_libraries}" cldc="false" >
+			<fileset dir="classes" excludes="**/*P.class" />
 		</wtkpackage>
+		
+		<!-- Create the library file for Processing-->
+		<wtkpackage jarfile="library/${library_file}p.jar" 
+				jadfile="${library_file}.jad" obfuscate="false" preverify="false"				
+				classpath="${library_libraries}"
+				>
+			<fileset dir="classes" includes="**/*P.class" />
+		</wtkpackage>						
 
 		<!-- Delete temp classes and jad file -->
 		<delete failonerror="false" file="${library_file}.jad" />
@@ -95,8 +109,12 @@
 			use="true" 
 			private="true"
 			windowtitle="${library_name} Library ${library_version} for Mobile Processing" >
-			<doctitle><![CDATA[<h1>${library_name} Library for Mobile Processing</h1>]]></doctitle>
-			<bottom><![CDATA[<i>Copyright &#169; ${library_vendor}</i>]]></bottom>
+			<doctitle>
+				<![CDATA[<h1>${library_name} Library for Mobile Processing</h1>]]>
+			</doctitle>
+			<bottom>
+				<![CDATA[<i>Copyright &#169; ${library_vendor}</i>]]>
+			</bottom>
 		</javadoc>
 
 	</target>
@@ -108,7 +126,8 @@
 
 		<mkdir dir="dist" />
 		
-		<zip destfile="dist/${library_file}_${library_version}.zip" excludes="dist">
+		<zip destfile="dist/${library_file}_${library_version}.zip" 
+			excludes="dist">
 			<zipfileset dir="../${library_file}" prefix="${library_file}" />
 		</zip>
 		
@@ -121,13 +140,25 @@
 			packagenames="*" 
 			>
 			<doclet name="prodoc.StartDoclet"
-					path=".">
+					path="..">
 			</doclet>
 		</javadoc>
 
 		<delete failonerror="false" dir="docs/api" />
 		<move file="src/documentation" tofile="docs/api"/>
 		
+	</target>
+	
+	<!-- Copy the library to the server -->
+	<target name="publish">
+	
+		<!-- Ask for username and password -->
+		<input message="Username:" addproperty="publish.username" />
+		<input message="Password:" addproperty="publish.password" />
+	
+		<!-- Copy the file to server using scp -->
+		<scp file="dist/${library_file}_${library_version}.zip" 
+			todir="${publish.username}:${publish.password}@${publish.hostname}:/${publish.path}"/>
 	</target>
 
 	<!-- Remove all created files to clean the build process -->
