@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+			<title>selectDefaultService()</title>
+			<link href="styles.css" rel="stylesheet" type="text/css">
+			<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="MBluetooth.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">selectDefaultService</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+import mjs.processing.mobile.mclientserver.*;
+
+int action;
+
+boolean clientRunning;
+
+MClent client;
+
+void draw()
+{
+	if(action == 1 && !clientRunning)
+	{
+		startClient()
+		clientRunning = true;
+	}
+
+	if(client != null && client.available())
+		println("" + client.readChar());
+}
+
+void startClient()
+{
+	client = MBluetooth.selectDefaultService();
+}
+
+void keyPressed()
+{
+	if(key == '*')
+		action = 1;
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+	
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2">
+			Creates a client with the Mobile Processing Service identified with the uuid 0xCAFE2005<br/>
+			<br/>
+			See the ClientSever documentation for more information about data exchange
+			</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Syntax</h2></div>
+			<div class="block2">
+				<ul>
+  					<li>MBluetooth.selectDefaultService()</li>
+ 				</ul>
+			</div>
+
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Returns</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>MClient</li>
+	 			<div class="description2">a client with the default service or null if service is not available.</div>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>

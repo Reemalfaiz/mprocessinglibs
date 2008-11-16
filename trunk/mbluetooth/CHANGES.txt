@@ -1,0 +1,39 @@
+MBluetooth Library for Mobile Processing
+----------------------------------------
+
+Version 0.4 (2006,09,03)
+------------------------
+- Update based on official bluetooth library
+- Events added
+- MService class added
+- Require MClientServer library 0.3
+- Processing compatibility maintained
+- Old version compatibility maintained
+- Tested under Linux and Z520a Phone
+- TicTacToe example added, both mobile and processing versions
+
+Version 0.3 (2006,07,31)
+------------------------
+- Processing Compatible
+- Contains Avetana JSR 80 implementation for Linux
+- Examples Update
+
+Version 0.2.1 (2005,11,15)
+--------------------------
+- Mobile Processing 0001 Compatible
+- Examples Update
+- Export File Added
+
+Version 0.2 (2005,11,08)
+------------------------
+- Build Script
+- Change Library Name from Bluetooth to MBluetooth
+
+Version 0.1 (2005,10,01)
+------------------------
+- First release
+- Local device name access
+- Device Discovered
+- Creation of own services
+
+$Id: CHANGES.txt 160 2006-09-03 23:15:40Z marlonj $

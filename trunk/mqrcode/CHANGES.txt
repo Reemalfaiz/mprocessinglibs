@@ -1,0 +1,23 @@
+Changes - MQRCode Library for Mobile Processing
+-----------------------------------------------
+
+Version 0.2 (2008,01,08)
+------------------------
+- QRCode decode library update to 0.9
+- Fixed background decode 
+- Tested in a K790 Sony Ericcson Phone 
+
+Version 0.1 (2006,07,23)
+------------------------
+- First Release
+- Encode QRCodes version 3
+- Decode QRCodes
+- Capture example implemented
+- Decode provide by 
+  QRCode decode library for J2ME 0.5
+  http://sourceforge.jp/projects/qrcode
+- Encode provide by
+  QRCode encode library 0.50 beta 10
+  http://www.swetake.com/qr/java/qr_java.html
+
+$Id: CHANGES.txt 349 2008-01-08 06:20:36Z marlonj $

@@ -1,0 +1,12 @@
+MWiimote Library for Mobile Processing - Changes
+------------------------------------------------
+
+Version 0.1 (2008,01,25)
+------------------------
+- Initial release
+- Buttons events (all 12 buttons) 
+- Accelerometer access x,y,z values
+- Proxy implementation
+- Processing and Mobile compatible
+
+$Id: CHANGES.txt 358 2008-01-24 22:24:32Z marlonj $

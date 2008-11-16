@@ -1,0 +1,11 @@
+# Export File
+#
+# $Id: export.txt 349 2008-01-08 06:20:36Z marlonj $
+
+# For the midlet export only the library
+midlet=mqrcode.jar,qrcode.jar
+
+# For applet or applications export the core implemetation 
+# also the processing library version
+applet=mqrcode.jar,qrcode.jar
+application=mqrcode.jar,qrcode.jar

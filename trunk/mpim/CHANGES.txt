@@ -1,0 +1,12 @@
+MPIM Library for Mobile Processing - Changes
+-------------------------------------------
+
+Version 0.1 (2007,10,25)
+------------------------
+- Initial release
+- Based on the JSR 75 API 
+- Support contact list access
+- Support creation of new contacts 
+- Only contact name and tel fields can be modified 
+
+$Id: CHANGES.txt 296 2007-10-25 15:21:18Z marlonj $

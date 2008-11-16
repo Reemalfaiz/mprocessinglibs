@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html">
+			<title>nearDevices()</title>
+			<link href="styles.css" rel="stylesheet" type="text/css">
+			<link href="styles_class.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+		<div id="container">
+			<div id="header"><span>
+				<p><a href="http://mjs.darkgreenmedia.com">mjs.darkgreenmedia.com</a></p>
+				<p><a href="MBluetooth.html">back</a></p>
+				</span>
+			</div>
+
+		<div class="block1">
+			<div class="title"><h2>Name</h2></div>
+			<div class="block2"><p class="name">nearDevices</p></div>
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Examples</h2></div>
+			<div class="block2">
+				<div class="sample">
+					<pre>
+import mjs.processing.mobile.mbluetooth.*;
+
+void keyPressed()
+{
+	// We need to create a different thread to avoid deadlocks
+	new Thread()
+	{
+		public void run()
+		{
+			MDevice[] devices = MBluetooth.nearDevices();
+	
+			for(int i=0; i&lt;devices.length; i++)
+				println(devices[i].name());
+		}
+	}.start();
+}
+					</pre>
+    				<br/>
+	  			</div>
+			</div>
+		</div>
+	
+		<div class="block1">
+			<div class="title"><h2>Description</h2></div>
+			<div class="block2">Returns an array with all the devices near to the local device.</div>
+		</div>
+
+
+		<div class="block1">
+			<div class="title"><h2>Syntax</h2></div>
+			<div class="block2">
+				<ul>
+  					<li>MBluetooth.nearDevices()</li>
+ 				</ul>
+			</div>
+
+		</div>
+
+		<div class="block1">
+			<div class="title"><h2>Returns</h2></div>
+			<div class="block2">
+			<ul>
+ 				<li>Device[]</li>
+	 			<div class="description2">Array with all the near devices</div>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>
