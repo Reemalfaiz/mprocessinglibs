@@ -34,6 +34,9 @@
 
 <project name="Library for Mobile Processing" default="build" basedir=".">
 
+	<!-- Load user global properties -->
+	<property file="${user.home}/.ant-global.properties"/>
+
 	<!-- use antenna to create J2ME library -->
 	<taskdef resource="antenna.properties" />
 
