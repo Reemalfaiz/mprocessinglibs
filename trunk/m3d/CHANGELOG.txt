@@ -1,6 +1,13 @@
 M3d Library for Mobile Processing - Log
 ---------------------------------------
 
+- (2008,11,16)
+
+  DON'T REMOVE the jsr184.jar
+
+  The jsr184.jar file must be present because the jikes compiler check the 
+  existence of the m3g package.
+
 - (2007,07,24)
 
   Methods x(), y(), z() added to the M3dObject to query the current location,
