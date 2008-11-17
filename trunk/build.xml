@@ -33,6 +33,10 @@
 
 <project name="Multiple Library Building" default="build" basedir=".">	
 
+	<!-- 
+	Create all libraries using a single call from ant 
+	The task list is in alphabetic order but some tasks depends of others, they are under the task
+	--> 
 	<target name="build">
 		<ant dir="m3d" inheritAll="false" />
 		<ant dir="mbt" inheritAll="false" />
@@ -60,6 +64,76 @@
 		<ant dir="mxmlrpc" inheritAll="false" />
 		<ant dir="mzxing" inheritAll="false" />
 	</target>
+
+	<!-- 
+	Create all libraries using a single call from ant 
+	The task list is in alphabetic order but some tasks depends of others, they are under the task
+	--> 
+	<target name="dist" depends="build">
+	
+		<!-- Create a zip with all the directory content at dist directory -->
+		<mkdir dir="dist" />
+
+		<!-- Add library contents to the zip -->
+		<zip destfile="dist/mlibraries.zip" excludes="dist">
+			<zipfileset dir="m3d" prefix="m3d" />
+			<zipfileset dir="mbt" prefix="mbt" />
+			<zipfileset dir="mclientserver" prefix="mclientserver" />
+			<zipfileset dir="mfiles" prefix="mfiles" />
+			<zipfileset dir="mgameii" prefix="mgameii" />
+			<zipfileset dir="mgestures" prefix="mgestures" />
+			<zipfileset dir="ml2cap" prefix="ml2cap" />
+			<zipfileset dir="mlocation" prefix="mlocation" />
+			<zipfileset dir="mnokiaui" prefix="mnokiaui" />
+			<zipfileset dir="mobex" prefix="mobex" />
+			<zipfileset dir="mpim" prefix="mpim" />
+			<zipfileset dir="mpush" prefix="mpush" />
+			<zipfileset dir="mmessaging" prefix="mmessaging" />
+			<zipfileset dir="mqrcode" prefix="mqrcode" />
+			<zipfileset dir="mrest" prefix="mrest" />
+			<zipfileset dir="mrtspserver" prefix="mrtspserver" />
+			<zipfileset dir="msensor" prefix="msensor" />
+			<zipfileset dir="msound" prefix="msound" />
+			<zipfileset dir="maudio3d" prefix="maudio3d" />
+			<zipfileset dir="msynth" prefix="msynth" />
+			<zipfileset dir="mvideo" prefix="mvideo" />
+			<zipfileset dir="mmediaserver" prefix="mmediaserver" />
+			<zipfileset dir="mwiimote" prefix="mwiimote" />
+			<zipfileset dir="mxmlrpc" prefix="mxmlrpc" />
+			<zipfileset dir="mzxing" prefix="mzxing" />
+		</zip>
+	</target>
+	
+	<!-- 
+	Clean all projects 
+	--> 
+	<target name="clean">
+		<ant dir="m3d" inheritAll="false" target="clean" />
+		<ant dir="mbt" inheritAll="false" target="clean" />
+		<ant dir="mclientserver" inheritAll="false" target="clean" />
+		<ant dir="mfiles" inheritAll="false" target="clean" />
+		<ant dir="mgameii" inheritAll="false" target="clean" />
+		<ant dir="mgestures" inheritAll="false" target="clean" />
+		<ant dir="ml2cap" inheritAll="false" target="clean" />
+		<ant dir="mlocation" inheritAll="false" target="clean" />
+		<ant dir="mnokiaui" inheritAll="false" target="clean" />
+		<ant dir="mobex" inheritAll="false" target="clean" />
+		<ant dir="mpim" inheritAll="false" target="clean" />
+		<ant dir="mpush" inheritAll="false" target="clean" />
+			<ant dir="mmessaging" inheritAll="false" target="clean" />
+		<ant dir="mqrcode" inheritAll="false" target="clean" />
+		<ant dir="mrest" inheritAll="false" target="clean" />		
+		<ant dir="mrtspserver" inheritAll="false" target="clean" />
+		<ant dir="msensor" inheritAll="false" target="clean" />
+		<ant dir="msound" inheritAll="false" target="clean" />
+			<ant dir="maudio3d" inheritAll="false" target="clean" />
+			<ant dir="msynth" inheritAll="false" target="clean" />
+		<ant dir="mvideo" inheritAll="false" target="clean" />
+			<ant dir="mmediaserver" inheritAll="false" target="clean" />		
+		<ant dir="mwiimote" inheritAll="false" target="clean" />
+		<ant dir="mxmlrpc" inheritAll="false" target="clean" />
+		<ant dir="mzxing" inheritAll="false" target="clean" />
+	</target>	
 	
 </project>
 
