@@ -1,8 +1,9 @@
-MIDlet-1: PrintLocation, ,PrintLocation
+MIDlet-1: PrintLocation, /icon.png, PrintLocation
+MIDlet-Icon: /icon.png
 MIDlet-Name: PrintLocation
 MIDlet-Version: 1.0.0
-MIDlet-Vendor: Mobile Processing ALPHA - 0001
+MIDlet-Vendor: Mobile Processing ALPHA - 0006
 MicroEdition-Profile: MIDP-1.0
 MicroEdition-Configuration: CLDC-1.0
 MIDlet-Jar-URL: PrintLocation.jar
-MIDlet-Jar-Size: 24167
+MIDlet-Jar-Size: 48260
