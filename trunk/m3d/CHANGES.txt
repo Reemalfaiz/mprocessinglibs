@@ -1,6 +1,18 @@
 Changes - M3d Library for Mobile Processing
 -------------------------------------------
 
+Version 0.6 (2009,01,17)
+------------------------
+- Bug Fixed : 
+  Image location always 0,0
+  Text function don't work
+  Draw empty text cause exception
+  Load World from resources with a start adds a slash (report by wk) 
+- Adding methods x(), y(), z() to query location M3dObject
+- M3d.lastObject that returns the last object added to the scene
+- Sprite implementation added like a image always facing the user 
+- Image implementation change to allow rotate, scale the image 
+
 Version 0.5 (2007,05,13)
 ------------------------
 - Updated to work with Mobile Processing Core 0010 ALPHA
