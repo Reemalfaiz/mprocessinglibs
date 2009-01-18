@@ -127,7 +127,7 @@
 			packagenames="*" 
 			>
 			<doclet name="prodoc.StartDoclet"
-					path="..">
+					path="../prodoc">
 			</doclet>
 		</javadoc>
 
