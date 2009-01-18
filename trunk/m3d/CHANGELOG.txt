@@ -1,6 +1,10 @@
 M3d Library for Mobile Processing - Log
 ---------------------------------------
 
+- (2009,01,17)
+
+  Fixed : M3d.loadWorld(name) add an extra / when name is provide 
+
 - (2008,11,16)
 
   DON'T REMOVE the jsr184.jar

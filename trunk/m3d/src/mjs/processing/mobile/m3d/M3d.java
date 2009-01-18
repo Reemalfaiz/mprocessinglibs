@@ -1426,11 +1426,13 @@ public class M3d extends PCanvas
 		try
 		{
 			// If the name is not a URI load from the resources path
+			// Check if the file have the root / 
 			if(!name.startsWith("http://"))
-				name = "/" + name;
+				if(!name.startsWith("/"))
+					name = "/" + name;
 				
 			// Load the world
-			Object3D[] objects = Loader.load("/" + name);
+			Object3D[] objects = Loader.load(name);
 
             // Find the world node, best to do it the "safe" way
             for(int i = 0; i < objects.length; i++)
