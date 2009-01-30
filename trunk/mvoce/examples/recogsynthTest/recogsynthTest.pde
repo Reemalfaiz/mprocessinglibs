@@ -20,7 +20,7 @@ MVoce mVoce;
 
 void setup()
 {
-  // Create the voce engine with synthesis unable
+  // Create the voce engine with synthesis enable,
   // recognition enable and recognice the words 
   // acoording the grammar file digits inside the data folder
   mVoce = new MVoceP(this,true,true,"digits");
