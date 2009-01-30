@@ -16,10 +16,17 @@ MVoce is licensed LGPL
 Voce is licensed under the BSD or LGPL Open Source licenses.  
 Also, be sure to read the licenses for FreeTTS and CMU Sphinx4.
 
+Libraries Web Sites : 
+---------------------
+
+http://sourceforge.net/projects/voce
+http://freetts.sourceforge.net
+http://cmusphinx.sourceforge.net/sphinx4
+
 Enjoy!
 
 http://www.maryjanesoft.com
 http://www.marlonj.com
 
-Copyright (c) 2009 Marlon J. Manrique (marlonj@maryjanesoft.com)
+Copyright (c) 2009 Marlon J. Manrique (marlonj@maryjanesoft.com)
 $Id$
