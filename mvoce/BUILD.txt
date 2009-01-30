@@ -1,0 +1,15 @@
+Build the Library for Processing
+--------------------------------
+
+You can build this library, to do that you will need :
+
+- Ant, Java Based Build Tool (http://ant.apache.org/)
+- Processing (http://www.processing.org)
+
+Instructions : 
+--------------
+
+- Copy this library at Mobile Processing libraries directory 
+- Run build script using ant
+
+$Id$
