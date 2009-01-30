@@ -1,0 +1,8 @@
+XXX Library for Mobile Processing - Changes
+-------------------------------------------
+
+Version x.x (????,??,??)
+------------------------
+- Initial release
+
+$Id$

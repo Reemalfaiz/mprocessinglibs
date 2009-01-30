@@ -1,0 +1,7 @@
+XXX Library for Mobile Processing - Log
+---------------------------------------
+
+- (????,??,??)
+
+
+$Id$
