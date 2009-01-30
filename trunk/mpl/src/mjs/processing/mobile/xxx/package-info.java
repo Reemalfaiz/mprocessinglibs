@@ -2,10 +2,10 @@
 
 	XXX - XXX Library for Mobile Processing
 
-	Copyright (c) 2008 Mary Jane Soft - Marlon J. Manrique
+	Copyright (c) 2009 Mary Jane Soft - Marlon J. Manrique
 	
-	http://mjs.darkgreenmedia.com
-	http://marlonj.darkgreenmedia.com
+	http://www.maryjanesoft.com
+	http://www.marlonj.com
 
 	This library is free software; you can redistribute it and/or
 	modify it under the terms of the GNU Lesser General Public
