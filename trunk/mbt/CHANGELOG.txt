@@ -1,6 +1,10 @@
 MBt Library for Mobile Processing - Log
 ---------------------------------------
 
+- (2009,02,01)
+
+  Library AvetanaBT update to work with Ubuntu 8.10 
+
 - (2008,01,23)
  
   Release 0.1
