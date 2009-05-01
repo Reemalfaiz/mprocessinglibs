@@ -187,4 +187,18 @@ public class MRestRequest extends RestRequest implements RestResultListener
 		if(pMIDlet != null)
 			pMIDlet.enqueueLibraryEvent(this,EVENT_ERROR,message);
 	}
+
+	/**
+	 * Sets the general request property. If a property with the key 
+	 * already exists, overwrite its value with the new value.
+	 *
+	 * @param key the keyword by which the request is known (e.g., "accept")
+	 * @param value - the value associated with it. 
+	 *
+	 * @since 0.3
+	 */
+	public void property(String key, String value)
+	{
+		setProperty(key,value);
+	}	
 }

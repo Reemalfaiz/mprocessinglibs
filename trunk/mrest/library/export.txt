@@ -1,1 +1,1 @@
-midlet=mrest.jar,microrest_0.2.jar
+midlet=mrest.jar,microrest_0.3.jar

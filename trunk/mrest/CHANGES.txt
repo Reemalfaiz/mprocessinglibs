@@ -1,6 +1,11 @@
 Changes - MRest Library for Mobile Processing
 ---------------------------------------------
 
+Version 0.3 (2009,05,01)
+------------------------
+- Adding support for request properties 
+- Example changeUserAgent added 
+
 Version 0.2 (2007,05,15)
 ------------------------
 - Basic HTTP Authorization implemented 
