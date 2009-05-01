@@ -1,6 +1,14 @@
 MRest Library for Mobile Processing - Log
 -----------------------------------------
 
+- (2009,05,01)
+
+  Example changeUserAgent added 
+
+  Adding support to send request properties like the User-Agent 
+
+  Library MicroRest updated to version 0.3
+
 - (2008,05,15)
 
   TwitterUpdate example added.
